@@ -5,6 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+puts 'Cleaning database...'
+Sneaker.destroy_all
+
+puts 'Creating sneakers...'
+
 Sneaker.create!(
   name: 'Jordan 1 Retro High Off-White Chicago',
   brand: 'Jordan x Off-White',
@@ -12,6 +18,7 @@ Sneaker.create!(
   price_per_sneaker: 190,
   size: 11
 )
+
 
 Sneaker.create!(
   name: 'Converse Chuck Taylor All-Star 70s Hi Off-White',
@@ -36,3 +43,6 @@ Sneaker.create!(
   price_per_sneaker: 179,
   size: 11
 )
+
+
+puts 'Finished!'

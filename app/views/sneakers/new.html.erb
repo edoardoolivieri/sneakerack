@@ -1,0 +1,13 @@
+<%= simple_form_for @sneaker do |f| %>
+
+  <%= f.input :name, placeholder: "Sneaker Name" %>
+  <%= f.input :description, placeholder: "Description" %>
+  <%= f.text_field :brand, placeholder: "Brand Name" %>
+  <%= f.text_field :price_per_sneaker, placeholder: "Price £" %>
+  <%= f.text_field :size, placeholder: "Size in UK" %>
+  <%= f.button :submit, class: "btn-primary" %>
+  <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
+
+<% end %>
+
+<%= link_to "Home", root_path, class: "btn" %>

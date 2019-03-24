@@ -36,8 +36,9 @@ gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.6.1'
 gem 'simple_form'
 gem 'webpacker', '~> 4.x'
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.2'
 gem 'dotenv-rails', groups: [:development, :test]
+gem 'cloudinary', '~> 1.9.1'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

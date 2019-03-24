@@ -6,6 +6,7 @@
           <h1>My list of sneakers</h1>
           <% @sneakers.each do |sneaker| %>
             <h2><%= link_to sneaker.name, sneaker_path(sneaker) %></h2>
+            <%= cl_image_tag sneaker.photo, class: "img-show-sneaker" %>
             <p>Story :<%= sneaker.description %></p>
             <p>Brand :<%= sneaker.brand %></p>
             <p>Price : £ <%= sneaker.price_per_sneaker %></p>

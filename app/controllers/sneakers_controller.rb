@@ -1,6 +1,10 @@
 class SneakersController < ApplicationController
   def index
+    if params[:query].present?
+      @sneakers = Sneaker.where("name LIKE ?", "%#{params[:query]}%")
+    else
     @sneakers = Sneaker.all
+  end
   end
 
   def show

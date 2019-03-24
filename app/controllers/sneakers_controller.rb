@@ -21,9 +21,17 @@ class SneakersController < ApplicationController
   end
 
   def edit
+    @sneaker = Sneaker.find(params[:id])
   end
 
   def update
+    @sneaker = Sneaker.find(params[:id])
+    @sneaker.update(sneaker_params)
+    if @sneaker.save
+      redirect_to sneaker_path
+    else
+      render :edit
+    end
   end
 
   def destroy

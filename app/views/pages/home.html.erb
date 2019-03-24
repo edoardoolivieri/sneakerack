@@ -1,4 +1,6 @@
 <div class="container">
+    <%= cl_image_tag("home-banner",
+       class: "img-show-sneaker") %>
   <div class="d-flex justify-content-center">
   <%= link_to "All Sneakers", sneakers_path, class: "btn btn-primary"%>
   <%= link_to "Add Sneaker", new_sneaker_path, class: "btn btn-success"%>

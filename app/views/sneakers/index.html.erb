@@ -1,12 +1,19 @@
 <div class="container">
-  <%= link_to "Home", root_path, class: "btn" %>
-  <h1>My list of sneakers</h1>
-  <% @sneakers.each do |sneaker| %>
-    <h2><%= link_to sneaker.name, sneaker_path(sneaker) %></h2>
-    <p>Story :<%= sneaker.description %></p>
-    <p>Brand :<%= sneaker.brand %></p>
-    <p>Price : £ <%= sneaker.price_per_sneaker %></p>
-    <p>Size UK :<%= sneaker.size %></p>
-    <%= link_to "Delete sneaker", sneaker_path(sneaker), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-outline-dark" %>
-  <% end %>
+  <div class="row">
+    <div class="col">
+
+          <%= link_to "Home", root_path, class: "btn" %>
+          <h1>My list of sneakers</h1>
+          <% @sneakers.each do |sneaker| %>
+            <h2><%= link_to sneaker.name, sneaker_path(sneaker) %></h2>
+            <p>Story :<%= sneaker.description %></p>
+            <p>Brand :<%= sneaker.brand %></p>
+            <p>Price : £ <%= sneaker.price_per_sneaker %></p>
+            <p>Size UK :<%= sneaker.size %></p>
+            <%= link_to "Delete sneaker", sneaker_path(sneaker), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-outline-secondary" %>
+          <% end %>
+
+      </div>
+    </div>
+  </div>
 </div>

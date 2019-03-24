@@ -1,14 +1,16 @@
 <div class="container">
   <div class="row">
-    <%= simple_form_for @sneaker do |f| %>
-      <%= f.input :name, placeholder: "Sneaker Name" %>
-      <%= f.input :description, as: :text %>
-      <%= f.input :brand %>
-      <%= f.input :price_per_sneaker, placeholder: "Price £" %>
-      <%= f.input :size, placeholder: "Size in UK" %>
-      <%= f.button :submit, class: "btn-primary" %>
-      <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
-    <% end %>
+    <div class="col">
+      <%= simple_form_for @sneaker do |f| %>
+        <%= f.input :name, placeholder: "Sneaker Name" %>
+        <%= f.input :description, as: :text %>
+        <%= f.input :brand %>
+        <%= f.input :price_per_sneaker, placeholder: "Price £" %>
+        <%= f.input :size, placeholder: "Size in UK" %>
+        <%= f.button :submit, class: "btn-primary" %>
+        <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
+      <% end %>
+    </div>
   </div>
 </div>
 

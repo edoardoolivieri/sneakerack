@@ -1,8 +1,8 @@
 class SneakersController < ApplicationController
   def index
     if params[:query].present?
-      sneakers_name = params[:query].downcase
-      @sneakers = Sneaker.where("name LIKE ?", "%#{sneakers_name}%")
+      # sneakers_name = params[:query].downcase
+      @sneakers = Sneaker.search(params[:query])
       # sql_query = "name LIKE :query OR syllabus LIKE :query"
       # @sneakers = Sneaker.where(sql_query, query: "%#{params[:query]}%")
     else

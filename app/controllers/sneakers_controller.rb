@@ -21,7 +21,7 @@ class SneakersController < ApplicationController
   def create
     @sneaker = Sneaker.new(sneaker_params)
     if @sneaker.save
-       redirect_to sneakers_path
+       redirect_to sneaker_path(@sneaker)
     else
       render :new
     end

@@ -1,13 +1,17 @@
-
-<nav class="navbar navbar-light bg-light">
-  <%= link_to "Home", root_path, class:"btn btn-outline-dark navbar-brand" %>
-    <div class="new-search">
-      <%= form_tag sneakers_path, method: :get, class: "form search-skills" do %>
-        <%= text_field_tag :query,
-          params["query"],
-          class: "form-control search",
-          placeholder: "Search"
-        %>
-      <% end %>
-    </div>
-</nav>
+<div class="container">
+  <nav class="navbar navbar-light">
+    <%= link_to "SnkRack", root_path, class:"tag" %>
+      <div class="new-search d-flex">
+        <%= form_tag sneakers_path, method: :get, class: "form search-skills" do %>
+          <%= text_field_tag :query,
+            params["query"],
+            class: "form-control search",
+            placeholder: "Search Snk"
+          %>
+        <% end %>
+        <div class="icon-search">
+          <i class="fas fa-search"></i>
+        </div>
+      </div>
+  </nav>
+</div>

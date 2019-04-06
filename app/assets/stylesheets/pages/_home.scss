@@ -1,2 +1,42 @@
 // Specific CSS for your home-page
+.white{
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 60%;
+  height: 100%;
+  z-index: -1;
+}
 
+.description-buttons{
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 560px;
+}
+
+.content-description{
+  width: 93%;
+
+  h1{
+    font-size: 32px;
+    font-weight: bold;
+  }
+  h3{
+    font-size: 16px;
+  }
+
+  p{
+    font-size: 8px;
+    font-weight: italic;
+  }
+}
+
+.button{
+  margin-top: 40px;
+}
+
+.buttons{
+  margin-top: 40px;
+}

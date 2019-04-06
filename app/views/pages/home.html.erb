@@ -1,9 +1,27 @@
-<div class="container">
-    <%= cl_image_tag("home-banner",
-       class: "img-show-sneaker") %>
-  <div class="d-flex justify-content-center">
-  <%= link_to "All Sneakers", sneakers_path, class: "btn btn-primary"%>
-  <%= link_to "Add Sneaker", new_sneaker_path, class: "btn btn-success"%>
+<div class="white">
+</div>
 
+<div class="container">
+  <div class="banner">
+    <div class="description-buttons d-flex">
+      <div class="content-description text-left">
+        <p>01 DIXIT APPEAR project</p>
+        <h1>Jordan 1 Retro High Off-White University Blue</h1>
+        <h3>Time for some Tobacco Road vibes with these Jordan 1 Retro Off-Whites. Also known as the “UNC” editions, these Jordan 1s are the third colorway designed by Virgil Abloh and made in collaboration with his Off-White label.</h3>
+        <p>The sneakers come in a white, dark powder blue and cone colorway, with a white and blue deconstructed leather upper and Off-White detailing throughout. If you’re a fan of Virgil Abloh’s work and want to rep Off-White, this pair is another must-have.</p>
+      </div>
+      <div class="buttons d-flex justify-content-around">
+        <%= link_to "All Sneakers", sneakers_path, class: "btn btn-home" %>
+        <%= link_to "Add Sneaker", new_sneaker_path, class: "btn btn-home" %>
+       </div>
+      <div class="button d-flex justify-content-around">
+        <p>arrow</p>
+        <%= link_to "Join the community", root_path, class:"btn btn-2home" %>
+      </div>
+    </div>
+    <div class="images">
+
+    </div>
   </div>
 </div>
+

@@ -12,6 +12,10 @@ body.homepage{
     width: 100% !important;
   }
 
+  .images{
+    width: 100% !important;
+  }
+
   .white{
     display: none;
   }
@@ -24,6 +28,7 @@ body.homepage{
   .footer{
     background-color: black;
     color: white !important;
+    margin-top: 30px;
   }
   .footer-links a{
     color: white !important;
@@ -75,4 +80,36 @@ body.homepage{
 
 .buttons{
   margin-top: 40px;
+}
+
+.jordan1{
+  flex-direction: column;
+  margin: 10px
+}
+
+.jordan2{
+  flex-direction: column;
+  margin: 10px;
+}
+
+.image{
+  width: 100%;
+  margin: 10px;
+  border-radius: 8px;
+}
+.image-1{
+  display: block;
+  position: relative;
+  top: 16px;
+}
+.image-2{
+  display: block;
+  position: relative;
+  top: 30px;
+}
+
+.image-4{
+  display: block;
+  position: relative;
+  top: 25px;
 }

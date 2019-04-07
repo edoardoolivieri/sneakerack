@@ -1,4 +1,35 @@
 // Specific CSS for your home-page
+body.homepage{
+  background-color: black !important;
+}
+
+@media only screen and (max-width: 600px){
+  .banner{
+    flex-direction: column;
+  }
+
+  .description-buttons{
+    width: 100% !important;
+  }
+
+  .white{
+    display: none;
+  }
+
+  .content-description{
+  width: auto;
+  color: white !important;
+  }
+
+  .footer{
+    background-color: black;
+    color: white !important;
+  }
+  .footer-links a{
+    color: white !important;
+  }
+}
+
 .white{
   background-color: white;
   position: fixed;
@@ -9,15 +40,20 @@
   z-index: -1;
 }
 
+
+.images{
+  width: 50%;
+}
+
 .description-buttons{
   flex-direction: column;
   justify-content: space-between;
   margin-top: 50px;
-  width: 560px;
+  width: 50%;
 }
 
 .content-description{
-  width: 93%;
+  width: auto;
 
   h1{
     font-size: 32px;

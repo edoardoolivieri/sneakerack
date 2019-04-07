@@ -11,10 +11,17 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
-    <%= yield %>
-    <%= render 'shared/footer' %>
-
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class= "masthead mb-3">
+      <%= render 'shared/navbar' %>
+    </header>
+    <main role="main" class="inner cover">
+      <%= yield %>
+    </main>
+    <footer class= "mastfoot mt-auto">
+      <%= render 'shared/footer' %>
+    </footer>
+  </div>
   <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
   <%= javascript_pack_tag "application" %>    <!-- from app/javascript/packs/application.js -->
   </body>

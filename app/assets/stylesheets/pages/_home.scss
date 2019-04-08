@@ -52,7 +52,7 @@ body.homepage{
 
 .description-buttons{
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 50px;
   width: 50%;
 }
@@ -63,23 +63,25 @@ body.homepage{
   h1{
     font-size: 32px;
     font-weight: bold;
+    margin: 15px 0px;
   }
   h3{
     font-size: 16px;
+    margin: 15px 0px;
   }
 
   p{
-    font-size: 8px;
+    font-size: 10px;
     font-weight: italic;
+    margin: 15px 0px;
   }
 }
 
 .button{
-  margin-top: 40px;
 }
 
 .buttons{
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .jordan1{
@@ -112,4 +114,8 @@ body.homepage{
   display: block;
   position: relative;
   top: 25px;
+}
+
+.fa-arrow-right{
+  width: 90px;
 }

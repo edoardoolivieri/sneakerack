@@ -11,10 +11,10 @@
         <p>Brand :<%= @sneaker.brand %></p>
         <p>Price : £ <%= @sneaker.price_per_sneaker %></p>
         <p>Size UK :<%= @sneaker.size %></p>
-        <%= link_to "Delete sneaker", sneaker_path(@sneaker), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-outline-secondary" %>
-        <%= link_to "All Sneakers", sneakers_path, class: "btn btn-outline-secondary"%>
+        <%= link_to "Delete sneaker", sneaker_path(@sneaker), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-outline-secondary btn-home" %>
+        <%= link_to "All Sneakers", sneakers_path, class: "btn btn-outline-secondary btn-home"%>
         <%= link_to edit_sneaker_path do %>
-          <div class= "btn btn-outline-secondary">
+          <div class= "btn btn-outline-secondary btn-home">
          Edit
           </div>
         <% end %>

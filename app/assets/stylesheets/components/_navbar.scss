@@ -1,7 +1,7 @@
 .tag{
   color: $primary !important;
   font-weight: bold;
-  z-index: 1;
+  font-size: 50px;
 }
 
 .tag:hover{
@@ -11,24 +11,38 @@
 
 .search{
   border: none;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $secondary;
   background-color: transparent;
 }
 
 .icon-search{
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid $secondary;
   width: 24px;
 }
 
 .fa-search{
     margin-top: 12px;
   /* padding-right: 5px; */
-  color: white;
+  color: $primary;
   opacity: 0.9;
 }
 
 .navbar{
+  padding-top: 10px;
   padding: 0px !important;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: $secondary !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+input::placeholder{
+  color: $primary !important;
+  opacity: 0.4 !important;
 }

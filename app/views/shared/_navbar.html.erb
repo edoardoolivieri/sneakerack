@@ -1,17 +1,23 @@
 <div class="container">
-  <nav class="navbar navbar-light">
+  <% if controller_name == "sneakers" %>
+    <nav class="navbar navbar-light">
+      <%= link_to "SnkRack", root_path, class:"tag" %>
+              <div class="new-search d-flex">
+                <%= form_tag sneakers_path, method: :get, class: "form search-skills" do %>
+                  <%= text_field_tag :query,
+                    params["query"],
+                    class: "form-control search",
+                    placeholder: "Search Brand"
+                  %>
+                <% end %>
+                <div class="icon-search">
+                  <i class="fas fa-search"></i>
+                </div>
+              </div>
+    </nav>
+  <% else%>
+  <div class="navbar-home d-flex justify-content-center h-200">
     <%= link_to "SnkRack", root_path, class:"tag" %>
-      <div class="new-search d-flex">
-        <%= form_tag sneakers_path, method: :get, class: "form search-skills" do %>
-          <%= text_field_tag :query,
-            params["query"],
-            class: "form-control search",
-            placeholder: "Search Brand"
-          %>
-        <% end %>
-        <div class="icon-search">
-          <i class="fas fa-search"></i>
-        </div>
-      </div>
-  </nav>
+  </div>
+  <% end %>
 </div>

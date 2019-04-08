@@ -16,6 +16,21 @@
   background-color: $secondary;
 }
 
+@media only screen and (max-width: 600px){
+  .btn-home{
+    padding: 4px 16px;
+    font-size: 10px;
+  }
+
+  .button{
+    margin-top: 15px;
+  }
+
+  .buttons{
+    margin: 0px !important;
+  }
+}
+
 .btn-2home{
   background: black;
   transition: background 0.3s ease;

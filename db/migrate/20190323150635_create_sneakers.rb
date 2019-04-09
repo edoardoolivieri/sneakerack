@@ -6,7 +6,6 @@ class CreateSneakers < ActiveRecord::Migration[5.2]
       t.text :description
       t.integer :price_per_sneaker
       t.integer :size
-
       t.timestamps
     end
   end

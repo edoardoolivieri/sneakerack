@@ -32,16 +32,20 @@
 }
 
 .btn-2home{
-  background: black;
+  background: transparent;
+  border: 1px solid $primary;
   transition: background 0.3s ease;
-  color: white !important;
+  color: black !important;
   font-size: 10px;
   border-radius: 5px;
-  height: 29px;
+  height: 18px;
   text-align: center;
-  font-weight: bold;
+  font-weight: lighter;
+  padding: 1px 55px;
+  margin-top: 11px;
 }
 
 .btn-2home:hover{
-  opacity: 0.7;
+  border-color: $secondary;
+  color: $primary !important;
 }

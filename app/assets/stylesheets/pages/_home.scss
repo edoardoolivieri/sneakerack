@@ -26,7 +26,9 @@ body.homepage{
   width: auto;
   color: white !important;
   }
-
+  .footer-copyright{
+    font-size: 10px;
+  }
   .footer{
     background-color: black;
     color: white !important;
@@ -34,6 +36,19 @@ body.homepage{
   }
   .footer-links a{
     color: white !important;
+  }
+
+  .btn-2home{
+    color: white !important;
+    align-items: center;
+  }
+
+  .arrow1{
+    display: none !important;
+  }
+
+  .button{
+    justify-content: center !important;
   }
 }
 
@@ -55,7 +70,6 @@ body.homepage{
 .description-buttons{
   flex-direction: column;
   justify-content: space-around;
-  margin-top: 50px;
   width: 50%;
 }
 
@@ -83,7 +97,6 @@ body.homepage{
 }
 
 .buttons{
-  margin-top: 20px;
 }
 
 .jordan1{
@@ -120,4 +133,12 @@ body.homepage{
 
 .fa-arrow-right{
   width: 90px;
+}
+
+.arrow1{
+  flex-direction: column;
+  p{
+    font-size: 10px;
+    margin: 0px !important;
+  }
 }

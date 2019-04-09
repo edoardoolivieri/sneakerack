@@ -1,13 +1,21 @@
 <div class="container">
   <div class="row">
     <div class="col">
-          <h1>My list of sneakers</h1>
-          <% @sneakers.each do |sneaker| %>
-            <h2><%= link_to sneaker.name, sneaker_path(sneaker) %></h2>
-            <%= cl_image_tag sneaker.photo, class: "img-show-sneaker" %>
-            <p>Story :<%= sneaker.description %></p>
-          <% end %>
+          <div class="cards">
+            <% @sneakers.each do |sneaker| %>
+              <%= link_to sneaker_path(sneaker) do %>
+                <div class="img-cards">
+                  <%= cl_image_tag sneaker.photo, class: "img-show-sneaker" %>
+                </div>
+              <% end %>
+            <% end %>
+        </div>
       </div>
     </div>
   </div>
 </div>
+
+<script>
+  ScrollReveal().reveal('.img-cards', { interval: 900, reset: true })
+  // ScrollReveal().reveal('.img-show-sneaker', { deay: 1000 })
+</script>

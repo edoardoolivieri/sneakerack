@@ -61,6 +61,13 @@ body.homepage{
   .content-description{
     text-align: center !important;
   }
+
+  .navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .white{

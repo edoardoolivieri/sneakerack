@@ -18,6 +18,10 @@ body.homepage{
     width: 100% !important;
   }
 
+  .image{
+    margin: 0px !important;
+  }
+
   .white{
     display: none;
   }
@@ -28,6 +32,9 @@ body.homepage{
   }
   .footer-copyright{
     font-size: 8px;
+    justify-content: space-between !important;
+    width: 100%;
+    padding-left: 12px;
   }
   .footer{
     background-color: black;

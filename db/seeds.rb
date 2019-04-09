@@ -51,4 +51,14 @@ sneaker = Sneaker.create!(
 sneaker.remote_photo_url = "https://stockx.imgix.net/Air-Jordan-3-Retro-Tinker-White-University-Red.png?fit=fill&bg=FFFFFF&w=700&h=500&auto=format,compress&q=90&trim=color&updated_at=1551413308&w=1000"
 sneaker.save
 
+sneaker = Sneaker.create!(
+  name: 'Jordan 1 Retro High Off-White University Blue',
+  brand: 'Jordan',
+  description: 'Time for some Tobacco Road vibes with these Jordan 1 Retro Off-Whites. Also known as the “UNC” editions, these Jordan 1s are the third colorway designed by Virgil Abloh and made in collaboration with his Off-White label. The sneakers come in a white, dark powder blue and cone colorway, with a white and blue deconstructed leather upper and Off-White detailing throughout. If you’re a fan of Virgil Abloh’s work and want to rep Off-White, this pair is another must-have.',
+  price_per_sneaker: 179,
+  size: 11
+)
+sneaker.remote_photo_url = "https://www.flightclub.com/media/catalog/product/cache/1/image/1600x1140/9df78eab33525d08d6e5fb8d27136e95/8/0/804093_02.jpg"
+sneaker.save
+
 puts 'Finished!'

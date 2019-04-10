@@ -12,6 +12,7 @@ body.homepage{
 
   .description-buttons{
     width: 100% !important;
+    height: 767px;
   }
 
   .images{
@@ -67,6 +68,13 @@ body.homepage{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .button-add{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
   }
 }
 

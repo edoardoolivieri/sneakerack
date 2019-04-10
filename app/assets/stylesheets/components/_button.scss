@@ -86,3 +86,21 @@
   background-color: $secondary !important;
   text-decoration: none !important;
 }
+
+.btn-form{
+  background: transparent;
+  transition: background 0.3s ease;
+  color: $primary !important;
+  border: 1px solid $secondary;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.btn-form:hover{
+  color: black !important;
+  background-color: $secondary;
+}
+
+

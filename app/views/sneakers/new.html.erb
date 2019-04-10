@@ -1,17 +1,19 @@
 <div class="container">
   <div class="row">
-    <div class="col">
+    <div class="col add-form">
       <%= simple_form_for @sneaker do |f| %>
-        <%= f.input :name, placeholder: "Sneaker Name" %>
-        <%= f.input :description, as: :text %>
-        <%= f.input :brand %>
-        <%= f.input :price_per_sneaker, placeholder: "Price £" %>
-        <%= f.input :size, placeholder: "Size in UK" %>
-        <%= f.input :link, placeholder: "Size in UK" %>
+        <%= f.input :name, placeholder: "Sneaker Name..." %>
+        <%= f.input :description, as: :text, placeholder: "Description Sneaker..." %>
+        <%= f.input :brand, placeholder: "Nike, Jordan, Adidas..." %>
+        <%= f.input :price_per_sneaker, placeholder: "Price £..." %>
+        <%= f.input :size, placeholder: "Size in UK..." %>
+        <%= f.input :link, placeholder: "StockX link..." %>
         <%= f.input :photo %>
         <%= f.input :photo_cache, as: :hidden %>
-        <%= f.button :submit, class: "btn btn-home" %>
-        <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary btn-home" %>
+        <div class="buttons-new d-flex justify-content-between">
+          <%= f.button :submit, class: "btn btn-form" %>
+          <%= f.button :button, "Cancel", type: "reset", class: "btn btn-form" %>
+        </div>
       <% end %>
     </div>
   </div>

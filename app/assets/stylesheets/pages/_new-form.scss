@@ -1,0 +1,31 @@
+.add-form{
+  margin: 50px 0px;
+}
+
+.buttons-new{
+  margin: 40px 0px 0px 0px ;
+}
+
+.back{
+  margin: 10px 0px;
+}
+
+.backto:hover{
+  color: $secondary;
+  text-decoration: none;
+}
+@media only screen and (max-width: 600px){
+  .buttons-new{
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .btn-form{
+    margin: 20px;
+  }
+
+  .back{
+    display: flex;
+    justify-content: center;
+  }
+}

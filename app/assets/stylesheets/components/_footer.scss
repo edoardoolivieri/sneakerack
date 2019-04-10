@@ -6,6 +6,15 @@
   padding-right: 10px;
   color: black;
 }
+
+.typeform-share{
+  color: $secondary !important;
+  opacity: 0.8;
+}
+.typeform-share:hover{
+  opacity: 1;
+}
+
 @media (max-width: 600px){
   .footer{
     flex-direction: column;
@@ -42,7 +51,9 @@
 
 .footer-copyright{
   font-size: 12px;
+  align-items: center;
   p{
     font-weight: bold;
+    margin: 0px !important;
   }
 }

@@ -31,19 +31,33 @@ body.homepage{
   width: auto;
   color: white !important;
   }
+
   .footer-copyright{
     font-size: 8px;
     justify-content: space-between !important;
     width: 100%;
     padding-left: 12px;
+    margin: 0px !important;
+    padding-top: 10px;
   }
+
   .footer{
     background-color: black;
     color: white !important;
     margin-top: 30px;
+    margin-bottom: 10px;
   }
+
+  .footer-links{
+    padding-bottom: 10px;
+  }
+
   .footer-links a{
     color: white !important;
+  }
+
+  .footer-links a:hover{
+    color: $secondary !important;
   }
 
   .btn-2home{

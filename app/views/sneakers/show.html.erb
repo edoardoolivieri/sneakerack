@@ -8,14 +8,19 @@
           </div>
           <div class="description-stockx text-center d-flex align-center">
             <h2><%= @sneaker.name%></h2>
-            <p>Story :<%= @sneaker.description %></p>
-            <p>Brand :<%= @sneaker.brand %></p>
-            <p>Price : £ <%= @sneaker.price_per_sneaker %></p>
-            <p>Size UK :<%= @sneaker.size %></p>
+            <p><%= @sneaker.description %></p>
+            <p><%= @sneaker.brand %></p>
+            <p>£<%= @sneaker.price_per_sneaker %></p>
+            <p>UK <%= @sneaker.size %></p>
             <%= link_to "StockX", @sneaker.link, class:"btn-stockx" %>
           </div>
         </div>
         <div class="buttons-show d-flex justify-content-around">
+          <%= link_to edit_sneaker_path do %>
+            <div class= "btn btn-show-last">
+              Edit SNK
+            </div>
+          <% end %>
           <%= link_to sneaker_path(@sneaker), method: :delete, data: { confirm: "Are you sure?" } do %>
             <div class= "btn btn-show-last">
               Delete SNK
@@ -25,11 +30,6 @@
           <div class="btn btn-show-last">
             All SNK
           </div>
-          <% end %>
-          <%= link_to edit_sneaker_path do %>
-            <div class= "btn btn-show-last">
-              Edit SNK
-            </div>
           <% end %>
         </div>
     </div>

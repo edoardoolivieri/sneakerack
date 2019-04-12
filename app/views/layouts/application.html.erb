@@ -13,13 +13,15 @@
   </head>
 
   <body>
-    <header class= "masthead mb-3">
-      <%= render 'shared/navbar' %>
-      <%= render 'shared/flashes' %>
-    </header>
-    <main role="main" class="inner cover">
-      <%= yield %>
-    </main>
+    <div class="index">
+      <header class= "masthead mb-3">
+        <%= render 'shared/navbar' %>
+        <%= render 'shared/flashes' %>
+      </header>
+      <main role="main" class="inner cover">
+        <%= yield %>
+      </main>
+    </div>
     <footer class= "mastfoot mt-auto">
       <%= render 'shared/footer' %>
     </footer>

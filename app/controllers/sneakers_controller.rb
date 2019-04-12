@@ -1,4 +1,5 @@
 class SneakersController < ApplicationController
+  before_action :authenticate_user!
   def index
     if params[:query].present?
       # sneakers_name = params[:query].downcase

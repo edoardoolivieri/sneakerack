@@ -1,21 +1,21 @@
 <div class="container">
-  <div class="button-add">
-    <%= link_to new_sneaker_path do %>
-      <i class="fas fa-plus-circle add"></i>
-    <% end %>
-  </div>
   <div class="description-example d-flex justify-content-between">
     <p>This is some example of sneakers, if you want you can keep it, edit it, delete it or buy it from our shop 👉 👉 👉
     </p>
     <%= link_to "Shop", root_path, class: "btn btn-shop-index" %>
+  </div>
+  <div class="button-add">
+    <%= link_to new_sneaker_path do %>
+      <i class="fas fa-plus-circle add"></i>
+    <% end %>
   </div>
   <div class="row">
     <div class="col">
           <div class="cards">
             <% @sneakers.each do |sneaker| %>
               <%= link_to sneaker_path(sneaker) do %>
-                <div class="img-cards">
-                  <%= cl_image_tag sneaker.photo, class: "img-show-sneaker", width: 500, height: 500 %>
+                <div class="img-cards" id="image-cards">
+                  <%= cl_image_tag sneaker.photo, class: "img-show-sneaker" %>
                 </div>
               <% end %>
             <% end %>
@@ -28,4 +28,16 @@
 <script>
   ScrollReveal().reveal('.img-cards', { interval: 500, reset: true })
   // ScrollReveal().reveal('.img-show-sneaker', { deay: 1000 })
+</script>
+<script type="text/javascript">
+  (function() {
+
+  var img = document.getElementById('image-cards').firstChild;
+  img.onload = function() {
+      if(img.height > img.width) {
+          img.height = '500px';
+          img.width = 'auto';
+      }
+  };
+}());
 </script>

@@ -1,5 +1,6 @@
 .img-show-sneaker {
-  width: 100%;
+  width: 400px;
+  height: 300px !important;
 }
 
 .cards {
@@ -10,16 +11,19 @@
 }
 
 .img-cards{
-  border: 1px solid white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  margin: 10px 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .img-show-sneaker:hover{
+  border-radius: 5px;
+  -webkit-transition: 0.35s ease-out;
   transform: scale(1.02);
   transition: 0.5s ease;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+  height: 400px;
+  // box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
 .add{

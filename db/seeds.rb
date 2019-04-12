@@ -11,16 +11,16 @@ Sneaker.destroy_all
 
 puts 'Creating sneakers...'
 
-sneaker = Sneaker.create!(
-  name: 'Jordan 1 Retro High Off-White Chicago',
-  brand: 'Jordan x Off-White',
-  description: 'The Off-White x Air Jordan 1 Retro High OG was one of the most highly anticipated footwear collaborations of 2017. It marked the first time Virgil Abloh, founder of the Milan-based fashion labled and Jordan Brand had teamed up. Nicknamed "The 10" edition, this pair comes in the original Chicago-themed white, black and varsity red colorway.',
-  price_per_sneaker: 190,
-  size: 11,
-  link: 'https://stockx.com/air-jordan-1-retro-high-off-white-chicago'
-)
-sneaker.remote_photo_url = "https://stockx-360.imgix.net/air-jordan-1-retro-high-off-white-chicago_TruView/Images/air-jordan-1-retro-high-off-white-chicago_TruView/Lv2/img04.jpg?auto=format,compress&q=90&updated_at=1538080256&w=1000"
-sneaker.save
+# sneaker = Sneaker.create!(
+#   name: 'Jordan 1 Retro High Off-White Chicago',
+#   brand: 'Jordan x Off-White',
+#   description: 'The Off-White x Air Jordan 1 Retro High OG was one of the most highly anticipated footwear collaborations of 2017. It marked the first time Virgil Abloh, founder of the Milan-based fashion labled and Jordan Brand had teamed up. Nicknamed "The 10" edition, this pair comes in the original Chicago-themed white, black and varsity red colorway.',
+#   price_per_sneaker: 190,
+#   size: 11,
+#   link: 'https://stockx.com/air-jordan-1-retro-high-off-white-chicago'
+# )
+# sneaker.remote_photo_url = "https://www.sportsfootwears.com/840-large_default/the-10-air-jordan-1-off-white---aa3834-101.jpg"
+# sneaker.save
 
 sneaker = Sneaker.create!(
   name: 'Converse Chuck Taylor All-Star 70s Hi Off-White',

@@ -18,6 +18,7 @@
 .icon-search{
   border-bottom: 1px solid $secondary;
   width: 24px;
+  height: 38px;
 }
 
 .fa-search{
@@ -46,3 +47,24 @@ input::placeholder{
   color: $primary !important;
   opacity: 0.4 !important;
 }
+
+.new-search{
+  margin-right: 32px;
+}
+
+.dropdown-menu.show {
+    display: block;
+}
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+.dropdown-menu {
+  background-color: $primary !important;
+  border-radius: 10px;
+  padding: 5px 0px !important;
+  a{
+    color: $secondary !important;
+  }
+}
+

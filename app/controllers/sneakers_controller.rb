@@ -8,20 +8,24 @@ class SneakersController < ApplicationController
       # @sneakers = Sneaker.where(sql_query, query: "%#{params[:query]}%")
     else
       @sneakers = Sneaker.all
+      @sneakers = policy_scope(Sneaker).order(created_at: :desc)
     end
   end
 
   def show
     @sneaker = Sneaker.find(params[:id])
+    authorize @sneaker
   end
 
   def new
     @sneaker = Sneaker.new
+    authorize @sneaker
   end
 
   def create
     @sneaker = Sneaker.new(sneaker_params)
     @sneaker.user = current_user
+    authorize @sneaker
     if @sneaker.save
        redirect_to sneaker_path(@sneaker), notice: 'Your Sneaker was succesfully create'
     else
@@ -31,11 +35,13 @@ class SneakersController < ApplicationController
 
   def edit
     @sneaker = Sneaker.find(params[:id])
+    authorize @sneaker
   end
 
   def update
     @sneaker = Sneaker.find(params[:id])
     @sneaker.update(sneaker_params)
+    authorize @sneaker
     if @sneaker.save
       redirect_to sneaker_path, notice: 'Your Sneaker was succesfully update'
     else
@@ -46,6 +52,7 @@ class SneakersController < ApplicationController
   def destroy
     @sneaker = Sneaker.find(params[:id])
     @sneaker.destroy
+    authorize @sneaker
     redirect_to sneakers_path, notice: 'Your Sneaker was succesfully destroy'
   end
 

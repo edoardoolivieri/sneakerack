@@ -15,7 +15,9 @@
         <% if user_signed_in? %>
           <div class="buttons d-flex justify-content-between">
             <%= link_to "All Sneakers", sneakers_path, class: "btn btn-home" %>
-            <%= link_to "Add Sneaker", new_sneaker_path, class: "btn btn-home" %>
+            <% if policy(Sneaker).create? %>
+              <%= link_to "Add Sneaker", new_sneaker_path, class: "btn btn-home" %>
+            <% end %>
           </div>
           <div class="button d-flex justify-content-between">
             <div class="arrow1 d-flex">

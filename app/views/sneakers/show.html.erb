@@ -12,19 +12,24 @@
             <p><%= @sneaker.brand %></p>
             <p>£<%= @sneaker.price_per_sneaker %></p>
             <p>UK <%= @sneaker.size %></p>
+            <p><%= @sneaker.user.email %></p>
             <%= link_to "StockX", @sneaker.link, class:"btn-stockx" %>
           </div>
         </div>
         <div class="buttons-show d-flex justify-content-around">
-          <%= link_to edit_sneaker_path do %>
-            <div class= "btn btn-show-last">
-              Edit SNK
-            </div>
+          <% if policy(@sneaker).update? %>
+            <%= link_to edit_sneaker_path do %>
+              <div class= "btn btn-show-last">
+                Edit SNK
+              </div>
+            <% end %>
           <% end %>
-          <%= link_to sneaker_path(@sneaker), method: :delete, data: { confirm: "Are you sure?" } do %>
-            <div class= "btn btn-show-last">
-              Delete SNK
-            </div>
+          <% if policy(@sneaker).destroy? %>
+            <%= link_to sneaker_path(@sneaker), method: :delete, data: { confirm: "Are you sure?" } do %>
+              <div class= "btn btn-show-last">
+                Delete SNK
+              </div>
+            <% end %>
           <% end %>
           <%= link_to sneakers_path do%>
           <div class="btn btn-show-last">

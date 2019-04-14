@@ -1,13 +1,16 @@
 <div class="container index">
   <div class="description-example d-flex justify-content-between">
-    <p>This is some example of sneakers, if you want you can keep it, edit it, delete it or buy it from our shop 👉 👉 👉
+    <p>This is some example of sneakers, if you want you can keep it, edit it, delete it or buy it from our shop if you missed a drop 👉 👉 👉
     </p>
     <%= link_to "Shop", root_path, class: "btn btn-shop-index" %>
   </div>
   <div class="button-add">
-    <%= link_to new_sneaker_path do %>
-      <i class="fas fa-plus-circle add"></i>
+    <% if policy(Sneaker).create? %>
+      <%= link_to new_sneaker_path do %>
+        <i class="fas fa-plus-circle add"></i>
+      <% end %>
     <% end %>
+    <p><%= link_to "user", user_path(@sneakers) %></p>
   </div>
   <div class="row">
     <div class="col">

@@ -21,8 +21,9 @@ class SneakersController < ApplicationController
 
   def create
     @sneaker = Sneaker.new(sneaker_params)
+    @sneaker.user = current_user
     if @sneaker.save
-       redirect_to sneaker_path(@sneaker)
+       redirect_to sneaker_path(@sneaker), notice: 'Your Sneaker was succesfully create'
     else
       render :new
     end
@@ -36,7 +37,7 @@ class SneakersController < ApplicationController
     @sneaker = Sneaker.find(params[:id])
     @sneaker.update(sneaker_params)
     if @sneaker.save
-      redirect_to sneaker_path
+      redirect_to sneaker_path, notice: 'Your Sneaker was succesfully update'
     else
       render :edit
     end
@@ -45,7 +46,7 @@ class SneakersController < ApplicationController
   def destroy
     @sneaker = Sneaker.find(params[:id])
     @sneaker.destroy
-    redirect_to sneakers_path
+    redirect_to sneakers_path, notice: 'Your Sneaker was succesfully destroy'
   end
 
   def sneaker_params

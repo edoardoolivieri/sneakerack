@@ -8,6 +8,19 @@
 
 puts 'Cleaning database...'
 Sneaker.destroy_all
+puts 'Creating User !'
+
+User.create!(
+  email: "l@l.com",
+  password: "123456"
+  )
+
+User.create!(
+  email: "e@e.com",
+  password: "123456"
+  )
+
+puts 'Finished!'
 
 puts 'Creating sneakers...'
 
@@ -72,17 +85,4 @@ sneaker.save
 
 puts 'Finished!'
 
-puts 'Creating User !'
-
-User.create!(
-  email: "l@l.com",
-  password: "123456"
-  )
-
-User.create!(
-  email: "e@e.com",
-  password: "123456"
-  )
-
-puts 'Finished!'
 

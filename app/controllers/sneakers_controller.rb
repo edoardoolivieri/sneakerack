@@ -3,6 +3,7 @@ class SneakersController < ApplicationController
   def index
     if params[:query].present?
       # sneakers_name = params[:query].downcase
+      @sneakers = policy_scope(Sneaker).order(created_at: :desc)
       @sneakers = Sneaker.search(params[:query])
       # sql_query = "name LIKE :query OR syllabus LIKE :query"
       # @sneakers = Sneaker.where(sql_query, query: "%#{params[:query]}%")
@@ -27,7 +28,7 @@ class SneakersController < ApplicationController
     @sneaker.user = current_user
     authorize @sneaker
     if @sneaker.save
-       redirect_to sneaker_path(@sneaker), notice: 'Your Sneaker was succesfully create'
+       redirect_to sneaker_path(@sneaker.user), notice: 'Your Sneaker was succesfully create'
     else
       render :new
     end

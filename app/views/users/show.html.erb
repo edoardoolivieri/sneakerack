@@ -1,5 +1,5 @@
 <div class="container">
-<h1 class= "d-flex justify-content-center">My Rack</h1>
+<h2 class= "d-flex justify-content-center title-show-user">My Rack</h2>
   <% if @user.sneakers.count == 0 %>
     <div class="d-flex justify-content-center">
       <div class="button-add text-center">
@@ -20,8 +20,7 @@
                 <div class="cards">
                   <% @user.sneakers.each do |sneaker| %>
                     <%= link_to sneaker_path(sneaker) do %>
-                      <div class="img-cards show-user d-flex" id="image-cards">
-                        <p><%= sneaker.name %></p>
+                      <div class="img-cards show-user d-flex text-center" id="image-cards">
                         <%= cl_image_tag sneaker.photo, class: "img-show-sneaker" %>
                       </div>
                     <% end %>

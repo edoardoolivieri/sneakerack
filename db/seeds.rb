@@ -11,11 +11,13 @@ Sneaker.destroy_all
 puts 'Creating User !'
 
 User.create!(
+  username: "1user",
   email: "l@l.com",
   password: "123456"
   )
 
 User.create!(
+  username: "2user",
   email: "e@e.com",
   password: "123456"
   )

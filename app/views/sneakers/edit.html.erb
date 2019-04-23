@@ -5,7 +5,7 @@
         <%= link_to "< Go Back", sneaker_path(@sneaker), class: "backto" %>
       </div>
       <%= simple_form_for @sneaker do |f| %>
-          <%= f.input :name, placeholder: "Sneaker Name..." %>
+        <%= f.input :name, placeholder: "Sneaker Name..." %>
         <%= f.input :description, as: :text, placeholder: "Description Sneaker..." %>
         <%= f.input :brand, placeholder: "Nike, Jordan, Adidas..." %>
         <%= f.input :price_per_sneaker, placeholder: "Price £..." %>

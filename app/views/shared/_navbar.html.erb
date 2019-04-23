@@ -4,7 +4,7 @@
         <div class="title-tag">
           <%= link_to "SnkRack", root_path, class:"tag" %>
         </div>
-        <div class="avatar-search d-flex ">
+        <div class="avatar-search d-flex align-center">
           <% if  controller_name == "users" %>
           <% else %>
             <div class="new-search d-flex">
@@ -27,7 +27,11 @@
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
               <p class= "dropdown-item">@<%= current_user.username %></p>
             </div>
-            <%= image_tag "avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <% if controller_name == "pages" %>
+              <%= image_tag "logo-black.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <% else %>
+              <%= image_tag "logo-white.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <% end %>
           </div>
         </div>
       </nav>

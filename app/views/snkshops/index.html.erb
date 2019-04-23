@@ -1,0 +1,15 @@
+<div class="container index">
+  <div class="row">
+    <div class="col">
+          <div class="cards">
+            <% @shops.each do |shop| %>
+              <%= link_to snkshop_path(shop) do %>
+                <div class="img-cards" id="image-cards">
+                  <%= image_tag shop.photo_url, class: "img-show-sneaker" %>
+                </div>
+              <% end %>
+            <% end %>
+          </div>
+    </div>
+  </div>
+</div>

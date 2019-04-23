@@ -7,7 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 puts 'Cleaning database...'
+User.destroy_all
 Sneaker.destroy_all
+Snkshop.destroy_all
 puts 'Creating User !'
 
 User.create!(
@@ -25,17 +27,6 @@ User.create!(
 puts 'Finished!'
 
 puts 'Creating sneakers...'
-
-# sneaker = Sneaker.create!(
-#   name: 'Jordan 1 Retro High Off-White Chicago',
-#   brand: 'Jordan x Off-White',
-#   description: 'The Off-White x Air Jordan 1 Retro High OG was one of the most highly anticipated footwear collaborations of 2017. It marked the first time Virgil Abloh, founder of the Milan-based fashion labled and Jordan Brand had teamed up. Nicknamed "The 10" edition, this pair comes in the original Chicago-themed white, black and varsity red colorway.',
-#   price_per_sneaker: 190,
-#   size: 11,
-#   link: 'https://stockx.com/air-jordan-1-retro-high-off-white-chicago'
-# )
-# sneaker.remote_photo_url = "https://www.sportsfootwears.com/840-large_default/the-10-air-jordan-1-off-white---aa3834-101.jpg"
-# sneaker.save
 
 sneaker = Sneaker.create!(
   name: 'Converse Chuck Taylor All-Star 70s Hi Off-White',
@@ -87,4 +78,11 @@ sneaker.save
 
 puts 'Finished!'
 
-
+puts 'Creating shop items...'
+  Snkshop.create!(sku: 'Jordan 1', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
+  Snkshop.create!(sku: 'Jordan 2', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
+  Snkshop.create!(sku: 'Jordan 3', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
+  Snkshop.create!(sku: 'Jordan 4', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
+  Snkshop.create!(sku: 'Jordan 5', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
+  Snkshop.create!(sku: 'Jordan 6', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
+puts 'Finished!'

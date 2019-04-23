@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   root to: 'pages#home'
   resources :sneakers
   resources :users, only: [:show]
+  resources :snkshops, only: [:index, :show]
 end

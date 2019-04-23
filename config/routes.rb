@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :sneakers
   resources :users, only: [:show]
   resources :snkshops, only: [:index, :show]
+  resources :orders, only: [:show, :create] do
+    resources :payments, only: [:new, :create]
+  end
 end

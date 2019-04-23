@@ -79,10 +79,60 @@ sneaker.save
 puts 'Finished!'
 
 puts 'Creating shop items...'
-  Snkshop.create!(sku: 'Jordan 1', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
-  Snkshop.create!(sku: 'Jordan 2', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
-  Snkshop.create!(sku: 'Jordan 3', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
-  Snkshop.create!(sku: 'Jordan 4', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
-  Snkshop.create!(sku: 'Jordan 5', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
-  Snkshop.create!(sku: 'Jordan 6', name: 'Air jordan 1 "panda', photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max")
+
+Money.locale_backend = nil
+
+  Snkshop.create!(
+    sku: 'Jordan 1',
+    name: 'Air jordan 1 panda',
+    description: 'description',
+    size: 10,
+    price: 150,
+    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
+    )
+
+  Snkshop.create!(
+    sku: 'Jordan 2',
+    name: 'Air jordan 1 panda',
+    description: 'description',
+    size: 11,
+    price: 150,
+    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
+    )
+
+  Snkshop.create!(
+    sku: 'Jordan 3',
+    name: 'Air jordan 1 panda',
+    description: 'description',
+    size: 9,
+    price: 150,
+    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
+    )
+
+  Snkshop.create!(
+    sku: 'Jordan 4',
+    name: 'Air jordan 1 panda',
+    description: 'description',
+    size: 12,
+    price: 150,
+    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
+    )
+
+  Snkshop.create!(
+    sku: 'Jordan 5',
+    name: 'Air jordan 1 panda',
+    description: 'description',
+    size: 8,
+    price: 150,
+    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
+    )
+
+  Snkshop.create!(sku: 'Jordan 6',
+    name: 'Air jordan 1 panda',
+    description: 'description',
+    size: 5,
+    price: 150,
+    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
+    )
+
 puts 'Finished!'

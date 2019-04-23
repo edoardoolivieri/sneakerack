@@ -14,8 +14,13 @@
           </div>
           <div class="description-stockx text-center d-flex align-center">
             <h2><%= @shop.name%></h2>
-            <p>description</p>
-            <p>£££</p>
+            <p>"<%= @shop.description%>"</p>
+            <p>UK <%= @shop.size%></p>
+            <p><%= humanized_money_with_symbol(@shop.price) %></p>
+            <%= form_tag orders_path do %>
+             <%= hidden_field_tag 'snkshop_id', @shop.id %>
+             <%= submit_tag 'Purchase', class: 'btn btn-home' %>
+            <% end %>
           </div>
         </div>
     </div>

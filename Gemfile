@@ -45,6 +45,8 @@ gem 'pg_search'
 gem 'searchkick', '~> 3.0'
 gem 'devise'
 gem 'pundit'
+gem 'money-rails'
+gem 'stripe'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false

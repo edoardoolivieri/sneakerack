@@ -27,7 +27,9 @@
             <a href="https://www.soleretriever.com/" class="btn btn-2home">new drops</a>
           </div>
         <% else %>
-          <%= link_to "Login", new_user_session_path, class: "btn btn-home w-100" %>
+            <%= link_to "Login", new_user_session_path, class: "btn btn-home w-100" %>
+            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-home w-100" %>
+
         <% end %>
       </div>
 

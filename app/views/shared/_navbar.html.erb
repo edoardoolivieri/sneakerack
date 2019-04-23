@@ -25,7 +25,7 @@
               <%= link_to "My Rack", current_user, class: "dropdown-item" %>
               <%= link_to "Edit Profile", edit_user_registration_path, class: "dropdown-item" %>
               <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-              <p><%= current_user.email %></p>
+              <p class= "dropdown-item">@<%= current_user.username %></p>
             </div>
             <%= image_tag "avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
           </div>

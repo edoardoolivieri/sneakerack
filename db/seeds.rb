@@ -83,56 +83,30 @@ puts 'Creating shop items...'
 Money.locale_backend = nil
 
   Snkshop.create!(
-    sku: 'Jordan 1',
-    name: 'Air jordan 1 panda',
-    description: 'description',
+    sku: 'Jordan 1 Retro High Rookie of the Year',
+    name: 'Jordan 1 Retro High Rookie of the Year',
+    description: 'What better way to celebrates MJ’s rookie of the year award than clinching the Jordan 1 Retro High Rookie of the Year. This unique shoe comes with a white and harvest leather upper, black Nike “Swoosh”, white midsole, and a black sole',
     size: 10,
-    price: 150,
-    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
+    price: 209.99,
+    photo_url: "https://stockx-360.imgix.net/Air-Jordan-1-Retro-High-Rookie-Of-The-Year/Images/Air-Jordan-1-Retro-High-Rookie-Of-The-Year/Lv2/img15.jpg?auto=format,compress&q=90&updated_at=1540493582&w=2200"
     )
 
   Snkshop.create!(
-    sku: 'Jordan 2',
-    name: 'Air jordan 1 panda',
-    description: 'description',
+    sku: 'Air Max 97 Neon Seoul',
+    name: 'Air Max 97 Neon Seoul',
+    description: 'Match the neon lights in the city of Seoul after copping the Air Max 97 Neon Seoul. This AM 97 comes with a black upper plus red, silver, and blue accents, red Nike “Swoosh”, black midsole, and a black sole',
+    size: 7,
+    price: 199.99,
+    photo_url: "https://stockx-360.imgix.net/Nike-Air-Max-97-Neon-Seoul/Images/Nike-Air-Max-97-Neon-Seoul/Lv2/img04.jpg?auto=format,compress&q=90&updated_at=1555622480&w=2200"
+    )
+
+  Snkshop.create!(
+    sku: 'Jordan 4 Retro Travis Scott Cactus Jack',
+    name: 'Jordan 4 Retro Travis Scott Cactus Jack',
+    description: 'The only way to describe the Travis Scott Air Jordan 4 Retros properly would be to use the rappers own adlib: la flame. These Jordan 4s were made in collaboration with rapper, Travis Scott and nicknamed the “Cactus Jack” edition. Similar in design to the infamous Eminem pair, these feature a lighter shade of blue suede on the upper. Black accents, a red liner, paint splatter detailing, a white midsole and “Cactus Jack” branding on the back heel tab finish things off for this pair',
     size: 11,
-    price: 150,
-    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
-    )
-
-  Snkshop.create!(
-    sku: 'Jordan 3',
-    name: 'Air jordan 1 panda',
-    description: 'description',
-    size: 9,
-    price: 150,
-    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
-    )
-
-  Snkshop.create!(
-    sku: 'Jordan 4',
-    name: 'Air jordan 1 panda',
-    description: 'description',
-    size: 12,
-    price: 150,
-    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
-    )
-
-  Snkshop.create!(
-    sku: 'Jordan 5',
-    name: 'Air jordan 1 panda',
-    description: 'description',
-    size: 8,
-    price: 150,
-    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
-    )
-
-  Snkshop.create!(sku: 'Jordan 6',
-    name: 'Air jordan 1 panda',
-    description: 'description',
-    size: 5,
-    price: 150,
-    photo_url: "https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2019%2F03%2Fair-jordan-1-panda-colorway-release-on-foot-close-0.jpg?w=960&cbr=1&q=90&fit=max"
+    price: 389.79,
+    photo_url: "https://stockx-360.imgix.net/Air-Jordan-4-Retro-Travis-Scott-Cactus-Jack/Images/Air-Jordan-4-Retro-Travis-Scott-Cactus-Jack/Lv2/img06.jpg?auto=format,compress&q=90&updated_at=1538080256&w=2200"
     )
 
 puts 'Finished!'

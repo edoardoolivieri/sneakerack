@@ -1,6 +1,11 @@
 <div class="container index">
   <div class="row">
     <div class="col">
+      <div class="text-center shop-description">
+        <h1>Dixit Appear Sneakers Shop</h1>
+        <p>only one item per user</p>
+      </div>
+      <hr>
           <div class="cards">
             <% @shops.each do |shop| %>
               <%= link_to snkshop_path(shop) do %>
@@ -10,6 +15,7 @@
               <% end %>
             <% end %>
           </div>
+      <hr>
     </div>
   </div>
 </div>

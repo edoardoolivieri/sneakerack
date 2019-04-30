@@ -7,6 +7,8 @@
         <div class="avatar-search d-flex align-center">
           <% if  controller_name == "users" %>
           <% elsif controller_name == "snkshops"%>
+          <% elsif controller_name == "orders"%>
+          <% elsif controller_name == "payments"%>
           <% else %>
             <div class="new-search d-flex">
               <%= form_tag sneakers_path, method: :get, class: "form search-skills" do %>

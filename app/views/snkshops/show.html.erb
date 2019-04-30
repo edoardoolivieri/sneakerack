@@ -1,10 +1,4 @@
 <div class="container">
-  <div class="back-to d-flex">
-    <% if controller_name == "sneakers"  %>
-      <%= link_to "Back to all snks >", sneakers_path, class: "backto" %>
-      <%= link_to "Go to your rack >", current_user, class: "backto" %>
-    <% end %>
-  </div>
   <div class="row">
     <div class="col">
       <div class="col-12">
@@ -12,7 +6,7 @@
           <div class="d-flex justify-content-center img-show-div">
             <%= image_tag @shop.photo_url, class: "img-show" %>
           </div>
-          <div class="description-stockx text-center d-flex align-center">
+          <div class="description-stockx-shop text-center d-flex align-center justify-content-center">
             <h2><%= @shop.name%></h2>
             <p>"<%= @shop.description%>"</p>
             <p>UK <%= @shop.size%></p>

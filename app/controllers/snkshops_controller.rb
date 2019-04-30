@@ -1,6 +1,4 @@
 class SnkshopsController < ApplicationController
-
-
   def index
     @shops = Snkshop.all
     @shops = policy_scope(Snkshop).order(created_at: :desc)

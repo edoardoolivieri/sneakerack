@@ -1,6 +1,10 @@
+<div class="logo-payment d-flex justify-content-center w-100">
+  <%= image_tag "logo-white.png", class: "dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+</div>
 <div class="container">
   <div class="row justify-content-center text-center payment-item">
     <h2>Purchase of sneaker</h2>
+    <p><%= current_user.email %></p>
     <h1><%= @order.snkshop_sku %></h1>
       <div class="form-payment">
         <%= form_tag order_payments_path(@order) do %>
@@ -19,5 +23,8 @@
           </script>
         <% end %>
       </div>
+      <p class= "back-top-shop">
+        <%= link_to "👈 back to shop", snkshops_path, class: "back-shops" %>
+      </p>
   </div>
 </div>

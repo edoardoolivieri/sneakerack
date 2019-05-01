@@ -12,9 +12,17 @@
             <p>UK <%= @shop.size%></p>
             <p><%= humanized_money_with_symbol(@shop.price) %></p>
             <%= form_tag orders_path do %>
-             <%= hidden_field_tag 'snkshop_id', @shop.id %>
-             <%= submit_tag 'Buy', class: 'btn btn-home' %>
+               <%= hidden_field_tag 'snkshop_id', @shop.id %>
+               <%= submit_tag 'Buy 👉', class: 'btn btn-home' %>
             <% end %>
+            <div class="d-flex justify-content-between text-center after-button-buy">
+              <div class="terms">
+                <p>Terms and Condition</p>
+              </div>
+              <div class="delivery">
+                <p>Ships in 3-5 business days ( only EU )</p>
+              </div>
+            </div>
           </div>
         </div>
     </div>

@@ -14,17 +14,21 @@
 
   <body>
     <div class="index">
-      <header class= "masthead mb-3">
-        <%= render 'shared/navbar' %>
-        <%= render 'shared/flashes' %>
-      </header>
+      <% unless controller_name == "payments" %>
+        <header class= "masthead mb-3">
+          <%= render 'shared/navbar' %>
+          <%= render 'shared/flashes' %>
+        </header>
+      <% end %>
       <main role="main" class="inner cover">
         <%= yield %>
       </main>
     </div>
-    <footer class= "mastfoot mt-auto">
-      <%= render 'shared/footer' %>
-    </footer>
+    <% unless controller_name == "payments" %>
+      <footer class= "mastfoot mt-auto">
+        <%= render 'shared/footer' %>
+      </footer>
+    <% end %>
   <%= javascript_include_tag "application" %> <!-- from app/assets/javascripts/application.js -->
   <%= javascript_pack_tag "application" %>
      <!-- from app/javascript/packs/application.js -->

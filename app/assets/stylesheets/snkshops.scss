@@ -31,7 +31,7 @@
     font-size: 10px;
   }
   flex-direction: column;
-  margin: 150px 0px;
+  margin: 50px 0px;
 }
 
 .order-page{
@@ -39,3 +39,28 @@
   flex-direction: column;
   align-items: center;
 }
+
+.after-button-buy{
+  flex-direction: column;
+  margin-top: 30px;
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.back-shops{
+  text-decoration: none;
+  opacity: 0.7;
+  color: black;
+  font-size: 16px;
+}
+
+.back-shops:hover{
+  text-decoration: none !important;
+  color: $secondary;
+  opacity: 1;
+}
+
+.back-top-shop{
+  margin-top: 20px;
+}
+

@@ -17,4 +17,24 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     authorize @user
    end
+
+  def new
+    @user = User.new
+    authorize @user
+  end
+
+   def create
+    @user = Sneaker.new(user_params)
+    authorize @user
+   end
+
+   def update
+    @user = User.find(params[:id])
+    @user.update(user_params)
+    authorize @user
+   end
+
+    def user_params
+    params.require(:user).permit(:email, :username, :password)
+  end
 end

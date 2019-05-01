@@ -16,16 +16,16 @@
 }
 
 .icon-search{
-  border-bottom: 1px solid $secondary;
   width: 24px;
   height: 38px;
 }
 
 .fa-search{
-    margin-top: 12px;
+    margin-top: 10px;
   /* padding-right: 5px; */
   color: $primary;
   opacity: 0.9;
+  font-size: 20px;
 }
 
 .navbar{
@@ -44,7 +44,7 @@
 }
 
 input::placeholder{
-  text-align: center;
+  text-align: right;
   color: $primary !important;
   opacity: 0.4 !important;
 }

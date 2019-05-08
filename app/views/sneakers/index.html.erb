@@ -16,8 +16,8 @@
           <div class="cards">
             <% @sneakers.each do |sneaker| %>
               <%= link_to sneaker_path(sneaker) do %>
-                <div class="img-cards" id="image-cards">
-                  <%= cl_image_tag sneaker.photo, class: "img-show-sneaker" %>
+                <div class=" img-cards" id="image-cards">
+                  <%= cl_image_tag sneaker.photo, class: "animated fadeInUp slow img-show-sneaker" %>
                 </div>
               <% end %>
             <% end %>

@@ -10,7 +10,7 @@
             <% @shops.each do |shop| %>
               <%= link_to snkshop_path(shop) do %>
                 <div class="img-cards" id="image-cards">
-                  <%= image_tag shop.photo_url, class: "img-show-sneaker" %>
+                  <%= image_tag shop.photo_url, class: "animated fadeInUp slow img-show-sneaker" %>
                 </div>
               <% end %>
             <% end %>

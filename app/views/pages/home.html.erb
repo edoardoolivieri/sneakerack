@@ -17,17 +17,18 @@
         <% if user_signed_in? %>
           <div class="buttons d-flex justify-content-between">
             <%= link_to "Rack", current_user, class: "btn btn-home" %>
+            <%= link_to "Shop", snkshops_path, class: "btn btn-home" %>
 <!--             <% if policy(Sneaker).create? %>
               <%= link_to "Add Sneaker", new_sneaker_path, class: "btn btn-home" %>
             <% end %> -->
           </div>
-          <div class="button d-flex justify-content-between">
+<!--           <div class="button d-flex justify-content-between">
             <div class="arrow1 d-flex">
               <p>Buy limited SNEAKERS from our shop</p>
               <%= image_tag "Arrow-1.png", class: "arrow", height: 16, width: 200 %>
             </div>
             <%= link_to "Shop", snkshops_path, class: "btn btn-2home" %>
-          </div>
+          </div> -->
         <% else %>
             <%= link_to "Login", new_user_session_path, class: "btn btn-home w-100" %>
             <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-home w-100" %>

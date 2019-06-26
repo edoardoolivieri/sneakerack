@@ -1,7 +1,6 @@
 <div class="container">
   <div class="back-to d-flex">
     <% if controller_name == "sneakers"  %>
-      <%= link_to "Back to all snks >", sneakers_path, class: "backto" %>
       <%= link_to "Go to your rack >", current_user, class: "backto" %>
     <% end %>
   </div>

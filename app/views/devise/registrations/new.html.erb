@@ -1,4 +1,47 @@
-<div class="container">
+<div class="main-form d-flex">
+  <div class="image-login">
+    <%= image_tag "poster.png", class: "image-signup1" %>
+  </div>
+  <div class="form-signup">
+    <h2 class="text-center">Get your free SnkRack account now.</h2>
+    <p>creating an account with us and you can create your perfect closet for your favorite sneakers</p>
+      <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+        <%= f.error_notification %>
+        <div class="form-inputs-signup">
+          <%= f.input :username,
+                      required: true,
+                      autofocus: true,
+                      input_html: { autocomplete: "username" }, placeholder: ""%>
+          <%= f.input :email,
+                      required: true,
+                      autofocus: true,
+                      input_html: { autocomplete: "email" }, placeholder: ""%>
+          <%= f.input :password,
+                      required: true,
+                      hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
+                      input_html: { autocomplete: "new-password" }, placeholder: "" %>
+          <%= f.input :password_confirmation,
+                      required: true,
+                      input_html: { autocomplete: "new-password" }, placeholder: "" %>
+        </div>
+
+        <div class="form-actions-signup">
+          <%= f.button :submit, "Sign up", class: "btn btn-home" %>
+        </div>
+      <% end %>
+      <div class="links">
+        <%= render "devise/shared/links" %>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- <div class="container">
   <div class="row d-flex justify-content-center log-form">
     <div class="col-sm-4 col-sm-offset-4 log-in">
       <h2 class="text-center">Sign up</h2>
@@ -31,4 +74,4 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->

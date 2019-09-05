@@ -28,7 +28,7 @@ body.homepage{
 
 .content-description{
   width: auto;
-
+  line-spacing: 1.5px;
   h1{
     font-size: 32px;
     font-weight: bold;
@@ -43,13 +43,8 @@ body.homepage{
     font-size: 12px;
     font-weight: italic;
     margin: 15px 0px;
+    opacity: 0.7;
   }
-}
-
-.button{
-}
-
-.buttons{
 }
 
 .jordan1{
@@ -94,6 +89,11 @@ body.homepage{
     font-size: 10px;
     margin: 0px !important;
   }
+}
+
+.sign-log{
+  opacity: 0.6;
+  font-size: 11px;
 }
 
 // Card Home Animation

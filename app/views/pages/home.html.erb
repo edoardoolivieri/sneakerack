@@ -1,73 +1,102 @@
-<div class="cover-container d-flex w-100 h-100  mx-auto flex-column">
-  <body class="homepage">
-  <div class="white container">
-  </div>
+<% if user_signed_in? %>
+<!-- DESIGN LANDING PAGE -->
 
-  <div class="container">
-    <div class="banner d-flex">
-      <div class="animated fadeInLeft description-buttons d-flex">
-        <div class="content-description text-left">
-          <p>
-            <span id="banner-typed-text"></span>
-          </p>
-          <h1>Jordan 1 Retro High Off-White University Blue 🏀</h1>
-          <h3>Time for some Tobacco Road vibes with these Jordan 1 Retro Off-Whites. Also known as the “UNC” editions, these Jordan 1s are the third colorway designed by Virgil Abloh and made in collaboration with his Off-White label.</h3>
-          <p>The sneakers come in a white, dark powder blue and cone colorway, with a white and blue deconstructed leather upper and Off-White detailing throughout. If you’re a fan of Virgil Abloh’s work and want to rep Off-White, this pair is another must-have 🤝.</p>
-        </div>
-        <% if user_signed_in? %>
-          <div class="buttons d-flex justify-content-between">
-            <%= link_to "Rack", current_user, class: "btn btn-home" %>
-            <%= link_to "Shop", snkshops_path, class: "btn btn-home" %>
-<!--             <% if policy(Sneaker).create? %>
-              <%= link_to "Add Sneaker", new_sneaker_path, class: "btn btn-home" %>
-            <% end %> -->
-          </div>
-<!--           <div class="button d-flex justify-content-between">
-            <div class="arrow1 d-flex">
-              <p>Buy limited SNEAKERS from our shop</p>
-              <%= image_tag "Arrow-1.png", class: "arrow", height: 16, width: 200 %>
+
+  <div class="cover-container d-flex w-100 h-100  mx-auto flex-column">
+    <body class="homepage">
+      <div class="white container">
+      </div>
+
+      <div class="container">
+        <div class="banner d-flex">
+          <div class="animated fadeInLeft description-buttons d-flex">
+            <div class="content-description text-left">
+              <p>
+                <span id="banner-typed-text"></span>
+              </p>
+              <h1>Jordan 1 Retro High Off-White University Blue 🏀</h1>
+              <h3>Time for some Tobacco Road vibes with these Jordan 1 Retro Off-Whites. Also known as the “UNC” editions, these Jordan 1s are the third colorway designed by Virgil Abloh and made in collaboration with his Off-White label.</h3>
+              <p>The sneakers come in a white, dark powder blue and cone colorway, with a white and blue deconstructed leather upper and Off-White detailing throughout. If you’re a fan of Virgil Abloh’s work and want to rep Off-White, this pair is another must-have 🤝.</p>
             </div>
-            <%= link_to "Shop", snkshops_path, class: "btn btn-2home" %>
-          </div> -->
-        <% else %>
-            <%= link_to "Login", new_user_session_path, class: "btn btn-home w-100" %>
-            <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-home w-100" %>
-
-        <% end %>
-      </div>
-
-      <div class="images">
-        <div class="d-flex">
-          <div class="jordan1 d-flex">
-            <%= image_tag "jordan3.jpg", class: "animated zoomIn image image-1" %>
-
-<!--
-            <div class="container-card-home">
-              <div class="card-home">
-                <div class="card-image-container">
-                </div>
-                <svg>
-                </svg>
-                <div class="card-content">
-                  <h1 class="card-title"></h1>
-                  <p></p>
-                </div>
-              </div>
-            </div> -->
-
-                  <%= image_tag "jordan4.jpg", class: "animated zoomIn image image-2" %>
-
-
-
+            <div class="buttons d-flex justify-content-between">
+              <%= link_to "Rack", current_user, class: "btn btn-home" %>
+              <%= link_to "Shop", snkshops_path, class: "btn btn-home" %>
+            </div>
           </div>
-          <div class="jordan2 d-flex">
-            <%= image_tag "jordan1.jpg", class: "animated zoomIn image image-3" %>
-            <%= image_tag "jordan2.jpg", class: "animated zoomIn image image-4" %>
+
+          <div class="images">
+            <div class="d-flex">
+              <div class="jordan1 d-flex">
+                <%= image_tag "jordan3.jpg", class: "animated zoomIn image image-1" %>
+                <%= image_tag "jordan4.jpg", class: "animated zoomIn image image-2" %>
+              </div>
+              <div class="jordan2 d-flex">
+                <%= image_tag "jordan1.jpg", class: "animated zoomIn image image-3" %>
+                <%= image_tag "jordan2.jpg", class: "animated zoomIn image image-4" %>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  </body>
-</div>
+    </body>
+  </div>
+<% else %>
+<!-- Sign UP / Log IN page -->
+  <div class="cover-container d-flex w-100 h-100  mx-auto flex-column">
+    <body class="homepage">
+      <div class="white container">
+      </div>
+
+      <div class="container">
+        <div class="banner d-flex">
+          <div class="animated fadeInLeft description-buttons d-flex">
+            <div class="content-description text-left">
+              <p>
+                <span id="banner-typed-text"></span>
+              </p>
+              <h1>Jordan 1 Retro High Off-White University Blue 🏀</h1>
+              <h3>Time for some Tobacco Road vibes with these Jordan 1 Retro Off-Whites. Also known as the “UNC” editions, these Jordan 1s are the third colorway designed by Virgil Abloh and made in collaboration with his Off-White label.</h3>
+              <p>The sneakers come in a white, dark powder blue and cone colorway, with a white and blue deconstructed leather upper and Off-White detailing throughout. If you’re a fan of Virgil Abloh’s work and want to rep Off-White, this pair is another must-have 🤝.</p>
+            </div>
+            <div class="d-flex flex-column">
+              <p class="sign-log">Please Log in or Sign up to have access to your rack</p>
+              <div class="buttons d-flex justify-content-between">
+                <%= link_to "Login", new_user_session_path, class: "btn btn-home" %>
+                <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-home" %>
+              </div>
+            </div>
+          </div>
+
+          <div class="images">
+            <div class="d-flex">
+              <div class="jordan1 d-flex">
+                <%= image_tag "jordan3.jpg", class: "animated zoomIn image image-1" %>
+                <%= image_tag "jordan4.jpg", class: "animated zoomIn image image-2" %>
+              </div>
+              <div class="jordan2 d-flex">
+                <%= image_tag "jordan1.jpg", class: "animated zoomIn image image-3" %>
+                <%= image_tag "jordan2.jpg", class: "animated zoomIn image image-4" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </body>
+  </div>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

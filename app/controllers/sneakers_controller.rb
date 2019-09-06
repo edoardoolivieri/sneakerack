@@ -28,7 +28,7 @@ class SneakersController < ApplicationController
     @sneaker.user = current_user
     authorize @sneaker
     if @sneaker.save
-       redirect_to sneaker_path(@sneaker), notice: 'Your Sneaker was succesfully create'
+      redirect_to sneaker_path(@sneaker), notice: 'Your Sneaker was succesfully create'
     else
       render :new
     end

@@ -99,39 +99,41 @@ body.homepage{
 // Home Sign in
 
 .section1{
-  margin: 120px 0px;
+  margin: 80px 0px 120px;
   padding: 0px 40px;
 }
 
 .content{
-  margin-top: 80px;
+  margin-top: 100px;
   width:650px;
   h1{
     font-family: 'Six Caps', sans-serif;
     font-size: 70px;
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
     font-weight: bold;
   }
 }
 
 .iphonex{
-  width: 300px;
+  width: 350px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
 }
 
 .content-2{
-  width: 300px;
+  width: 400px;
   margin-top: 100px;
   color: white;
   text-align: center;
-  margin-left: 40px;
   h1{
     font-family: 'Six Caps', sans-serif;
-    letter-spacing: 1.5px;
-    font-size: 32px;
+    letter-spacing: 2px;
+    font-size: 35px;
     font-weight: bold;
   }
   p{
     font-size: 12px;
+    letter-spacing: 1.5px;
   }
 }
 
@@ -145,17 +147,18 @@ body.homepage{
 
 .margin{
   margin: 20px 0px 52px 0px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-weight: bold;
+  letter-spacing: 1.5px;
 }
 
 .button{
   margin-top: 20px;
 }
 
-
-
-
-
-
+.drop{
+  margin: 30px 0px;
+}
 
 
 

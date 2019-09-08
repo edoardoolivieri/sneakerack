@@ -5,44 +5,33 @@
       <div class="white container">
       </div>
 
-      <div class="container d-flex justify-content-around">
-        <div class="content">
-          <h1>CREATE YOUR</h1><h1>“SNEAKERS CLOSET”</h1>
-          <p>100% free and save all the sneakers you love to the rack</p>
-          <button></button>
-        </div>
-        <div class="iphone">
-          <%= image_tag "iphonex.png", class: "animated zoomIn" %>
-        </div>
-        <!-- <div class="banner d-flex">
-          <div class="animated fadeInLeft description-buttons d-flex">
-            <div class="content-description text-left">
-              <p>
-                <span id="banner-typed-text"></span>
-              </p>
-              <h1>Jordan 1 Retro High Off-White University Blue 🏀</h1>
-              <h3>Time for some Tobacco Road vibes with these Jordan 1 Retro Off-Whites. Also known as the “UNC” editions, these Jordan 1s are the third colorway designed by Virgil Abloh and made in collaboration with his Off-White label.</h3>
-              <p>The sneakers come in a white, dark powder blue and cone colorway, with a white and blue deconstructed leather upper and Off-White detailing throughout. If you’re a fan of Virgil Abloh’s work and want to rep Off-White, this pair is another must-have 🤝.</p>
-            </div>
-            <div class="buttons d-flex justify-content-between">
-              <%= link_to "Rack", current_user, class: "btn btn-home" %>
-              <%= link_to "Shop", snkshops_path, class: "btn btn-home" %>
-            </div>
+      <div class="container">
+        <div class="section1 d-flex justify-content-between">
+          <div class="content">
+            <h1>CREATE YOUR “SNEAKERS CLOSET”</h1>
+            <p class="margin">CREATE.EDIT.DELETE.</p>
+            <p>100% free and you can save all the sneakers you love to the rack just click to the bottom rack
+              or if you miss a drop check our store and find your perfect sneaker.
+             </p>
+            <%= link_to "Rack", current_user, class: "btn btn-home button" %>
           </div>
-
-          <div class="images">
-            <div class="d-flex">
-              <div class="jordan1 d-flex">
-                <%= image_tag "jordan3.jpg", class: "animated zoomIn image image-1" %>
-                <%= image_tag "jordan4.jpg", class: "animated zoomIn image image-2" %>
-              </div>
-              <div class="jordan2 d-flex">
-                <%= image_tag "jordan1.jpg", class: "animated zoomIn image image-3" %>
-                <%= image_tag "jordan2.jpg", class: "animated zoomIn image image-4" %>
-              </div>
-            </div>
+          <div class="iphone">
+            <%= image_tag "iphonex.png", class: "iphonex animated zoomIn" %>
           </div>
-        </div> -->
+        </div>
+        <div class="section2 d-flex ">
+          <div class="imagebig">
+            <%= image_tag "homebig.jpg", class: "homebig animated zoomIn" %>
+          </div>
+          <div class="content-2">
+            <h1>Did you miss a drop ?</h1>
+            <p>Donec ut sollicitudin enim.
+              Maecenas placerat, turpis ut blandit tempor, dolor lacus pulvinar nibh,
+              ultrices malesuada augue mauris eget arcu. Phasellus velit nequek</p>
+            <p>Check our store 👍</p>
+            <%= link_to "Store", snkshops_path, class: "btn btn-2home" %>
+          </div>
+        </div>
       </div>
 
     </body>

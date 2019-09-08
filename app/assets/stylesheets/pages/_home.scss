@@ -96,20 +96,60 @@ body.homepage{
   font-size: 11px;
 }
 
-// Card Home Animation
+// Home Sign in
+
+.section1{
+  margin: 120px 0px;
+  padding: 0px 40px;
+}
+
+.content{
+  margin-top: 80px;
+  width:650px;
+  h1{
+    font-family: 'Six Caps', sans-serif;
+    font-size: 70px;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+}
+
+.iphonex{
+  width: 300px;
+}
+
+.content-2{
+  width: 300px;
+  margin-top: 100px;
+  color: white;
+  text-align: center;
+  margin-left: 40px;
+  h1{
+    font-family: 'Six Caps', sans-serif;
+    letter-spacing: 1.5px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 12px;
+  }
+}
+
+.homebig{
+  position: relative;
+  right: 86px;
+  width: 769px;
+}
 
 
 
+.margin{
+  margin: 20px 0px 52px 0px;
+}
 
-
-
-
-
-
-
-
-
-
+.button{
+  margin-top: 20px;
+}
 
 
 

@@ -11,7 +11,7 @@
         <% elsif controller_name == "pages"%>
         <% elsif controller_name == "payments"%>
         <% else %>
-<!--           <div class="new-search d-flex">
+          <div class="new-search d-flex">
             <%= form_tag user_path(current_user), method: :get, class: "form search-skills" do %>
               <%= text_field_tag :query,
                 params["query"],
@@ -22,7 +22,7 @@
             <div class="icon-search">
               <i class="fas fa-search"></i>
             </div>
-          </div> -->
+          </div>
         <% end %>
         <% if controller_name == "pages" %>
           <div class="nav-item d-flex">

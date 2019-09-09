@@ -1,6 +1,6 @@
 <div class="container index d-flex justify-content-center">
-  <h2 class= "d-flex justify-content-center title-show-user">My Rack</h2>
-  <% if @user.sneakers.count == 0 %>
+<% if @user.sneakers.count == 0 %>
+  <h2 class= "d-flex justify-content-center title-show-user">Closet</h2>
     <div class="d-flex justify-content-center">
       <div class="button-add text-center">
         <div class="text-center" style= "opacity: 0.5">
@@ -15,25 +15,31 @@
       </div>
     </div>
   <% else %>
-    <div class="row">
-      <div class="button-add text-center">
+      <%= image_tag "closet.jpg", class: "closet animated zoomIn" %>
+      <div class="buttonadd text-center">
         <% if policy(Sneaker).create? %>
           <%= link_to new_sneaker_path do %>
             <i class="fas fa-plus-circle add"></i>
           <% end %>
         <% end %>
       </div>
-        <div class="col">
-              <div class="cards">
-                <% @user.sneakers.each do |sneaker| %>
-                  <%= link_to sneaker_path(sneaker) do %>
-                    <div class="img-cards show-user d-flex text-center" id="image-cards">
-                      <%= cl_image_tag sneaker.photo, class: "img-show-sneaker" %>
-                    </div>
-                  <% end %>
-                <% end %>
+      <div class="col">
+        <div class="cards">
+          <% @user.sneakers.each do |sneaker| %>
+            <div class="img-cards" id="image-cards">
+              <h2 style="text-align: center;"><%= sneaker.name%></h2>
+              <%= cl_image_tag sneaker.photo, class: "img-show-sneaker" %>
+              <p>description</p>
+              <p style="text-align: center; opacity: 0.5;"><%= truncate(sneaker.description, length: 100, omission: " ...read more")%></p>
+              <!-- To DO read more link for description after design -->
+              <div class="brand d-flex justify-content-around">
+                <p>uk <%= sneaker.size %></p>
+                <p><%= sneaker.brand %></p>
+                <p>£<%= sneaker.price_per_sneaker %></p>
               </div>
+            </div>
+          <% end %>
         </div>
-    </div>
+      </div>
   <% end %>
 </div>

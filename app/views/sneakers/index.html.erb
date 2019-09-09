@@ -9,7 +9,7 @@
   <div class="row">
     <div class="col">
           <div class="cards">
-            <% @user.sneakers.each do |sneaker| %>
+            <% @sneakers.each do |sneaker| %>
               <%= link_to sneaker_path(sneaker) do %>
                 <div class=" img-cards" id="image-cards">
                   <%= cl_image_tag sneaker.photo, class: "animated fadeInUp slow img-show-sneaker" %>

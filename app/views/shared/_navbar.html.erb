@@ -1,46 +1,46 @@
 <% if user_signed_in? %>
   <div class="container">
-      <nav class="navbar navbar-light d-flex justify-content-between">
-        <div class="title-tag d-flex justify-content-center h-200">
-          <%= link_to "Snk", root_path, class:"tag" %>
-          <%= link_to "Rack", root_path, class:"tag-2" %>
-        </div>
-        <div class="avatar-search d-flex align-center">
-          <% if controller_name == "snkshops"%>
-          <% elsif controller_name == "orders"%>
-          <% elsif controller_name == "pages"%>
-          <% elsif controller_name == "payments"%>
-          <% else %>
-            <div class="new-search d-flex">
-              <%= form_tag user_path(current_user), method: :get, class: "form search-skills" do %>
-                <%= text_field_tag :query,
-                  params["query"],
-                  class: "form-control search",
-                  placeholder: "Search Brand"
-                %>
-              <% end %>
-              <div class="icon-search">
-                <i class="fas fa-search"></i>
-              </div>
+    <nav class="navbar navbar-light d-flex justify-content-between animated fadeInDown">
+      <div class="title-tag d-flex justify-content-center h-200">
+        <%= link_to "Snk", root_path, class:"tag" %>
+        <%= link_to "Rack", root_path, class:"tag-2" %>
+      </div>
+      <div class="avatar-search d-flex align-center">
+        <% if controller_name == "snkshops"%>
+        <% elsif controller_name == "orders"%>
+        <% elsif controller_name == "pages"%>
+        <% elsif controller_name == "payments"%>
+        <% else %>
+          <div class="new-search d-flex">
+            <%= form_tag user_path(current_user), method: :get, class: "form search-skills" do %>
+              <%= text_field_tag :query,
+                params["query"],
+                class: "form-control search",
+                placeholder: "Search Brand"
+              %>
+            <% end %>
+            <div class="icon-search">
+              <i class="fas fa-search"></i>
             </div>
-          <% end %>
-          <% if controller_name == "pages" %>
-            <div class="nav-item d-flex">
-              <%= link_to "home", root_path, class: "dropdown-item blackitem" %>
-              <%= link_to "shop", snkshops_path, class: "dropdown-item blackitem" %>
-              <%= link_to "rack", current_user, class: "dropdown-item blackitem" %>
-              <%= link_to "account", edit_user_registration_path, class: "dropdown-item blackitem" %>
-            </div>
-          <% else %>
-            <div class="nav-item d-flex">
-              <%= link_to "home", root_path, class: "dropdown-item" %>
-              <%= link_to "shop", snkshops_path, class: "dropdown-item" %>
-              <%= link_to "rack", current_user, class: "dropdown-item" %>
-              <%= link_to "account", edit_user_registration_path, class: "dropdown-item" %>
-            </div>
-          <% end %>
-        </div>
-      </nav>
+          </div>
+        <% end %>
+        <% if controller_name == "pages" %>
+          <div class="nav-item d-flex">
+            <%= link_to "home", root_path, class: "dropdown-item blackitem" %>
+            <%= link_to "shop", snkshops_path, class: "dropdown-item blackitem" %>
+            <%= link_to "rack", current_user, class: "dropdown-item blackitem" %>
+            <%= link_to "account", edit_user_registration_path, class: "dropdown-item blackitem" %>
+          </div>
+        <% else %>
+          <div class="nav-item d-flex">
+            <%= link_to "home", root_path, class: "dropdown-item" %>
+            <%= link_to "shop", snkshops_path, class: "dropdown-item" %>
+            <%= link_to "rack", current_user, class: "dropdown-item" %>
+            <%= link_to "account", edit_user_registration_path, class: "dropdown-item" %>
+          </div>
+        <% end %>
+      </div>
+    </nav>
   </div>
 <% else %>
   <div class="navbar-home d-flex justify-content-center h-200">

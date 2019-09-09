@@ -86,3 +86,12 @@ input::placeholder{
 .blackitem:hover{
   background-color: transparent !important;
 }
+
+.dropdown-item:hover, .dropdown-item:focus {
+  background-color: transparent !important;
+  color: $primary !important;
+}
+
+.dropdown-item.active, .dropdown-item:active{
+  background-color: transparent !important;
+}

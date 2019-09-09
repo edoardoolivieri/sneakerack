@@ -18,6 +18,11 @@ User.create!(
   password: "123456"
   )
 
+User.create!(
+  username: "Dixit",
+  email: "e@e.com",
+  password: "123456"
+  )
 puts 'Finished!'
 
 puts 'Creating sneakers...'

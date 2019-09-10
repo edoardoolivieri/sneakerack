@@ -15,7 +15,7 @@
       </div>
     </div>
   <% else %>
-      <%= image_tag "closet.jpg", class: "closet animated zoomIn" %>
+      <%= image_tag "banner.jpg", class: "closet animated zoomIn" %>
       <div class="buttonadd text-center">
         <% if policy(Sneaker).create? %>
           <%= link_to new_sneaker_path do %>
@@ -26,7 +26,7 @@
       <div class="col">
         <div class="cards">
           <% @user.sneakers.each do |sneaker| %>
-            <div class="img-cards" id="image-cards">
+            <div class="img-cards" id="@">
               <h2 style="text-align: center;"><%= sneaker.name%></h2>
               <%= cl_image_tag sneaker.photo, class: "img-show-sneaker" %>
               <p>description</p>
@@ -36,6 +36,18 @@
                 <p>uk <%= sneaker.size %></p>
                 <p><%= sneaker.brand %></p>
                 <p>£<%= sneaker.price_per_sneaker %></p>
+              </div>
+              <div class="icons d-flex justify-content-around">
+
+                  <%= link_to edit_sneaker_url(sneaker) do %>
+                    <i class="fas fa-edit"></i>
+                  <% end %>
+
+
+                  <%= link_to sneaker_path(sneaker), method: :delete, data: { confirm: "Are you sure?" } do %>
+                    <i class="fas fa-trash-alt"></i>
+                  <% end %>
+
               </div>
             </div>
           <% end %>

@@ -7,22 +7,22 @@
       </div>
       <div class="avatar-search d-flex align-center">
         <% if controller_name == "snkshops"%>
-        <% elsif controller_name == "orders"%>
-        <% elsif controller_name == "pages"%>
-        <% elsif controller_name == "payments"%>
-        <% else %>
- <!--          <div class="new-search d-flex">
-            <%= form_tag user_path(current_user), method: :get, class: "form search-skills" do %>
-              <%= text_field_tag :query,
-                params["query"],
-                class: "form-control search",
-                placeholder: "Search Brand"
-              %>
-            <% end %>
-            <div class="icon-search">
-              <i class="fas fa-search"></i>
-            </div>
-          </div> -->
+          <% elsif controller_name == "orders"%>
+          <% elsif controller_name == "pages"%>
+          <% elsif controller_name == "payments"%>
+          <% else %>
+   <!--          <div class="new-search d-flex">
+              <%= form_tag user_path(current_user), method: :get, class: "form search-skills" do %>
+                <%= text_field_tag :query,
+                  params["query"],
+                  class: "form-control search",
+                  placeholder: "Search Brand"
+                %>
+              <% end %>
+              <div class="icon-search">
+                <i class="fas fa-search"></i>
+              </div>
+            </div> -->
         <% end %>
         <% if controller_name == "pages" %>
           <div class="nav-item d-flex">
